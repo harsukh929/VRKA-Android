@@ -32,7 +32,7 @@ jobs:
 
       - name: Install Android SDK packages
         run: |
-          sdkmanager --install "platforms;android-37-ext2" "build-tools;36.0.0"
+          sdkmanager --install "platforms;android-37.2" "build-tools;36.0.0"
           yes | sdkmanager --licenses
 
       - name: Build development-signed APK
