@@ -207,6 +207,7 @@ Are you sure you want to enable concurrent downloads?</string>
     <string name="msg_latest_version">You\'re on the latest version (v%1$s)</string>
     <string name="msg_session_clear_failed">Failed to clear session</string>
     <string name="msg_session_cleared">Session cleared successfully</string>
+    <string name="nav_browser">Browser</string>
     <string name="nav_download">Download</string>
     <string name="nav_history">History</string>
     <string name="nav_queue">Queue</string>
