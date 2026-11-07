@@ -554,6 +554,7 @@ enum class VrkaDestination(
     @param:androidx.annotation.StringRes val labelRes: Int,
 ) {
     DOWNLOAD("Download", R.drawable.ic_download, R.string.nav_download),
+    BROWSER("Browser", R.drawable.ic_browser, R.string.nav_browser),
     QUEUE("Queue", R.drawable.ic_queue, R.string.nav_queue),
     HISTORY("History", R.drawable.ic_history, R.string.nav_history),
     SETTINGS("Settings", R.drawable.ic_settings, R.string.nav_settings),
