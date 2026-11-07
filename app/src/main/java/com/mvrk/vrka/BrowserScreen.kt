@@ -43,11 +43,6 @@ fun BrowserScreen(modifier: Modifier = Modifier) {
             runtimeManager.ensureExtensionsReady()
             val s = GeckoSession()
             s.open(runtimeManager.runtime)
-            s.navigationDelegate = object : GeckoSession.NavigationDelegate {
-                override fun onLocationChange(session: GeckoSession, url: String?, perms: MutableList<GeckoSession.PermissionDelegate.ContentPermission>, hasUserGesture: Boolean) {
-                    if (!url.isNullOrBlank()) address = url
-                }
-            }
             session = s
             s.loadUri("https://www.google.com")
         }.onFailure { pageTitle = "Browser could not start: ${it.message ?: "unknown error"}" }
