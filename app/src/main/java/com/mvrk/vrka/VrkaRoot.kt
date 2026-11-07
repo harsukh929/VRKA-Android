@@ -234,6 +234,9 @@ fun VrkaRoot(
                         beyondViewportPageCount = 1,
                     ) { page ->
                         when (destinations[page]) {
+                            VrkaDestination.BROWSER -> {
+                                BrowserScreen(modifier = Modifier.fillMaxSize().statusBarsPadding())
+                            }
                             VrkaDestination.DOWNLOAD -> {
                                 HomeScreen(
                                     settings = settings,
